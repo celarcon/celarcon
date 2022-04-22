@@ -23,9 +23,9 @@ app.get('/', (request, response) => {
   response.send('<h1>Hello World!</h1>')
 })
 
-app.use('/api/users', usersRouter)
-app.use('/api/login', loginRouter)
-app.use('/api/notes', notesRouter)
+app.use('/users', usersRouter)
+app.use('/login', loginRouter)
+app.use('/notes', notesRouter)
 
 app.use(notFound)
 app.use(handleErrors)
